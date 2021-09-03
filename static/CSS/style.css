@@ -3,7 +3,7 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     scroll-behavior: smooth;
-    /* border: solid rgb(0, 0, 0) 1px; */
+    border: solid rgb(0, 0, 0) 1px;
 }
 h1, h2, h3 {
     font-weight: lighter;
@@ -29,7 +29,7 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: auto;
+    width: 100vw;
     height: 100vh;
     background-size: cover;
     background-image: url(../CSS/backgroundblackcityseta.png );
@@ -47,7 +47,7 @@ body{
 
 .section__secundary{
     background-image: url(../CSS/backgroundblackcityseta2.jpg);
-    width: auto;
+    width: 100vw;
     height: 100vh;
     background-size: cover;
     color: white;
@@ -99,10 +99,11 @@ body{
 .section__terc{
     background-color: whitesmoke;
     width: auto;
-    height: 400px;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content:flex-start;
+    width: 100vw;
 }   
 
 .textform{
@@ -123,23 +124,28 @@ body{
 
 .form{
     padding-left: 25px;
+    width: 50vw;
 }
 
 .campo{
-    padding : 8px;
+    padding : 1%;
+    max-width: 100%;
 }
 #msg, #mail, #name{
     border-radius: 3px;
-    height: 35px;
+    height: 5vh;
     color:black;
     background-color: #EBEBEB;
     border: none;
 }
+#nome{
+    width: 100%;
+}
 #mail{
-    width: 405px;
+    width: 300%;
 }
 #msg {
-    width: 580px;
+    width: 100%;
     height: 65px;
 }
 
@@ -152,7 +158,7 @@ body{
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.226);
 }
 
-button{
+button {
     margin-left: 8px;
     background-color: #26FFA8;
     color: rgba(0, 0, 0, 0.541);
@@ -160,8 +166,8 @@ button{
     box-shadow: none;
     border: none;
     border-radius: 3px;
-    width: 20%;
-    height: 100%;
+    width: 10vw;
+    height: 5vh;
     font-weight: bold;
 }
 
@@ -171,6 +177,7 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
+    width: 100vw;
 }
+
+@media only screen and (max-device-width: 600px) {}
